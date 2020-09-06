@@ -19,15 +19,13 @@ public class IteratorError {
    public static <T> int search(List<T> list, T target) {
       int i = 0;
       Iterator<T> itr = list.iterator();
-      while ((itr.hasNext()) && (!itr.next().equals(target))) {
+      while (itr.hasNext()) {
+         if (!itr.next().equals(target)) {
+            return i;
+         }
          i++;
       }
-      if (itr.hasNext()) {
-         return i;
-      }
-      else {
-         return -1;
-      }
+      return -1;
    }
 
    /** Drives execution. */
