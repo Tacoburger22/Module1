@@ -23,8 +23,8 @@ public class IteratorExample {
       StringBuilder sb = new StringBuilder();
       sb.append("[");
       Iterator<T> itr = iterable.iterator();
-      while (itr.hasNext()) {
-         sb.append(itr.next());
+      for (T o : iterable) {
+         sb.append(o);
          sb.append(", ");
       }
       sb.delete(sb.length() - 2, sb.length());

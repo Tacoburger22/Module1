@@ -21,7 +21,6 @@ public class IteratorError {
       Iterator<T> itr = list.iterator();
       while ((itr.hasNext()) && (!itr.next().equals(target))) {
          i++;
-         itr.next();
       }
       if (itr.hasNext()) {
          return i;
