@@ -49,6 +49,11 @@ public class Student implements Comparable<Student> {
       int cmp = this.getLastName().compareTo(that.getLastName());
       if (cmp == 0) {
          cmp = this.getFirstName().compareTo(that.getFirstName());
+         if (cmp == 0) {
+            Integer sec1 = Integer.valueOf(this.getSection());
+            Integer sec2 = Integer.valueOf(that.getSection());
+            cmp = sec1.compareTo(sec2);
+         }
       }
       return cmp;
 
