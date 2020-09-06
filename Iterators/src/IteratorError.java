@@ -14,7 +14,7 @@ public class IteratorError {
 
    /**
     * Identify and eliminate the errors regarding the use
-    * of the iterator itr in the following method. Test.
+    * of the iterator itr in the following method.
     */
    public static <T> int search(List<T> list, T target) {
       int i = 0;
