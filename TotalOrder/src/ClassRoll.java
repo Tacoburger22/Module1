@@ -41,7 +41,7 @@ public class ClassRoll {
 
       // Shuffle the roll into a random order.
       // Use the Collections.shuffle() method.
-      // *** Replace this line with your solution.
+      Collections.shuffle(roll);
       System.out.println("Random Order: ");
       roll.forEach(System.out::println);
       System.out.println();
@@ -57,7 +57,7 @@ public class ClassRoll {
       // Use either Collections.reverseOrder() or
       // Comparator.reversed() in conjunction with
       // Collections.sort().
-      // *** Replace this line with your solution.
+      Collections.sort(roll, Collections.reverseOrder(orderBySection));
       System.out.println("Descending Order of Section: ");
       roll.forEach(System.out::println);
       System.out.println();
@@ -68,13 +68,20 @@ public class ClassRoll {
     * Implement this Comparator so that Student objects are compared
     * in ascending order of section. That is, compare(s1, s2) must
     * return a negative integer if s1's section is less than s2's section,
-    * zero if s1 and s2 have the same section, and a postive integer
+    * zero if s1 and s2 have the same section, and a positive integer
     * if s1's section is greater than s2's section.
     */
    public static class CompareStudentsBySection implements Comparator<Student> {
       /** Compares s1 to s2 in with respect to the defined total order. */
       public int compare(Student s1, Student s2) {
-         return -99;
+         int cmp = 0;
+         if (s1.getSection() < s2.getSection()) {
+            cmp = -1;
+         }
+         if (s1.getSection() > s2.getSection()) {
+            cmp = 1;
+         }
+         return cmp;
       }
    }
 

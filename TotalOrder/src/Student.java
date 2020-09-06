@@ -44,7 +44,14 @@ public class Student implements Comparable<Student> {
     */
    @Override
    public int compareTo(Student s) {
-      return -99;
+
+      Student that = (Student) s;
+      int cmp = this.getLastName().compareTo(that.getLastName());
+      if (cmp == 0) {
+         cmp = this.getFirstName().compareTo(that.getFirstName());
+      }
+      return cmp;
+
    }
 
    /** Returns a string representation of this student. */
