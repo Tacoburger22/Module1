@@ -3,8 +3,8 @@
  * Used to illustrate basic principles of generic types
  * and type safety in Java.
  *
- * @author   Dean Hendrix (dh@auburn.edu)
- * @version  2016-08-23
+ * @author   Isaac Weiss icw0001@auburn.edu
+ * @version  2020-09-05
  *
  */
 public class GenericsB {
