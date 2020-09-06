@@ -15,7 +15,7 @@ public class GenericsA {
     * Make this method generic. Use a type variable named
     * T that will allow you to search through an array
     * of any type and return the location of target in a
-    * or -1 if it doesn't exist.
+    * or -1 if it doesn't exist. Test.
     */
    public static <T> int search(T[] a, T target) {
       int i = 0;
