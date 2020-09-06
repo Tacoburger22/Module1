@@ -17,7 +17,7 @@ public class IteratorExample {
 
    /**
     * Accesses each element of an Iterable collection using an Iterator and
-    * returns a String representation of the underlying collection.
+    * returns a String representation of the underlying collection. Test.
     */
    public static <T> String toString(Iterable<T> iterable) {
       StringBuilder sb = new StringBuilder();
