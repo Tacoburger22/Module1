@@ -19,7 +19,7 @@ import java.util.List;
  // to eliminate all unchecked warnings. That is,
  // make this code type safe.
  //
- ///////////////////////////////////////////////
+ ////////////////////////////////////////////////
 
 public class GenericsC<T>{
 
