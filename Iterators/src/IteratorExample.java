@@ -9,8 +9,8 @@ import java.util.Vector;
  * IteratorExample.java
  * Illustrates the common pattern when using Iterators.
  *
- * @author   Dean Hendrix (dh@auburn.edu)
- * @version  2016-08-24
+ * @author   Isaac Weiss
+ * @version  2020-09-05
  *
  */
 public class IteratorExample {
